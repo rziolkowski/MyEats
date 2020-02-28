@@ -1,7 +1,10 @@
-p {
-  font-family: Times New Roman;
-}
-my-app {
-  color: red;
+#map_div {
+  border-style: double;
+  border-width: 15px;
+  border-color: black;
+  text-align: center;
   background-color: lightblue;
+  width: 50%;
+  float: right;
+  margin: 50px;
 }
