@@ -6,10 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: [ './restaurantContainer.component.css' ]
 })
 export class RestaurantContainerComponent {
-  restaurantArray=["Pizza", "Soup", "Burger"];
+  restaurantArray=[{name: "Noodles and Company", cuisine: "Pasta", website:"https://www.noodles.com/"}, {name: "Five Guys", cuisine: "Burgers", website:"https://www.fiveguys.com/"}, {name: "Chipotle", cuisine: "Mexican", website:"https://www.chipotle.com/"}, {name: "Noodles and Company", cuisine: "Pasta", website:"https://www.noodles.com/"}, {name: "Five Guys", cuisine: "Burgers", website:"https://www.fiveguys.com/"}, {name: "Chipotle", cuisine: "Mexican", website:"https://www.chipotle.com/"}, {name: "Noodles and Company", cuisine: "Pasta", website:"https://www.noodles.com/"}, {name: "Five Guys", cuisine: "Burgers", website:"https://www.fiveguys.com/"}, {name: "Chipotle", cuisine: "Mexican", website:"https://www.chipotle.com/"}, {name: "Noodles and Company", cuisine: "Pasta", website:"https://www.noodles.com/"}, {name: "Five Guys", cuisine: "Burgers", website:"https://www.fiveguys.com/"}, {name: "Chipotle", cuisine: "Mexican", website:"https://www.chipotle.com/"}];
   restaurant;
-
-  addRestaurant(value){
-
-  }
 }

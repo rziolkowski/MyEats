@@ -1,0 +1,16 @@
+li {
+  background: #fff;
+  border-left: 4px solid #b11a21;
+  margin: 1%;
+  list-style-type:none;
+  text-align: left;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+p {
+    color: #666;
+}
