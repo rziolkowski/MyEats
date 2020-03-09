@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: [ './restaurantContainer.component.css' ]
 })
 export class RestaurantContainerComponent {
+  restaurantArray=["Pizza", "Soup", "Burger"];
+  restaurant;
+
+  addRestaurant(value){
+
+  }
 }
