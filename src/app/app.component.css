@@ -1,23 +1,21 @@
 div {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
   border-style: double;
-  border-width: 15px;
+  border-width: 1vw;
   border-color: black;
   text-align: center;
   background-color: #7acfd6;
 }
 #restaurants_div {
-  margin-left: 50px;
-  margin-right: 25px;
-  width: 45%;
-  height: 750px;
+  margin-left: 4vw;
+  width: 45vw;
+  height: 85vh;
   overflow-y: scroll;
   float: left;
 }
 #map_div {
-  margin-left: 25px;
-  margin-right: 50px;
-  width: 40%;
+  margin-right: 4vw;
+  width: 40vw;
   float: right;
 }
