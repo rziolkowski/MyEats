@@ -14,8 +14,12 @@ div {
   overflow-y: scroll;
   float: left;
 }
-#map_div {
+#map_div, #filters_div{
   margin-right: 4vw;
   width: 40vw;
   float: right;
+}
+
+#filters_div {
+  text-align: left;
 }
