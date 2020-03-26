@@ -1,0 +1,8 @@
+.checkbox{
+  float: left;
+}
+.range {
+  float: right;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}

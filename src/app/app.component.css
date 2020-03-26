@@ -21,5 +21,8 @@ div {
 }
 
 #filters_div {
-  text-align: left;
+  display:grid;
+  margin-top: 0;
+  height: 17vh;
+  grid-template-rows: 5vh 5vh 5vh;
 }
