@@ -1,8 +1,9 @@
-.checkbox{
-  float: left;
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
 }
-.range {
-  float: right;
-  grid-column-start: 2;
-  grid-column-end: 3;
+
+.fullWidth {
+  grid-column: 1 / 3;
 }
