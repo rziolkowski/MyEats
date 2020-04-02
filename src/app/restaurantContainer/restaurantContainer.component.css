@@ -1,12 +1,15 @@
-li {
-  background: #fff;
-  border-left: 4px solid #b11a21;
+a, p, li {
   margin: 1%;
+}
+li {
+  background-color: #fff;
+  border-left: 4px solid #D6817A;
   list-style-type:none;
   text-align: left;
 }
 a {
   text-decoration: none;
+  color: #000;
 }
 a:hover {
   text-decoration: underline;

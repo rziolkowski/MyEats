@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 
+
 @Component({
   selector: 'my-map',
   styleUrls: [ './map.component.css' ],
@@ -29,5 +30,4 @@ export class MapComponent implements OnInit{
         });
       }
     }
- 
 }
