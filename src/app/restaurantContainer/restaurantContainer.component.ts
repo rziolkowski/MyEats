@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { RestaurantContainerService } from '../services/restaurantContainer.service';
+import { RestaurantModel } from '../models/restaurant.model';
 
 @Component({
   selector: 'my-restaurants',
@@ -6,6 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: [ './restaurantContainer.component.css' ]
 })
 export class RestaurantContainerComponent {
-  restaurantArray=[{name: "Noodles and Company", cuisine: "Pasta", website:"https://www.noodles.com/"}, {name: "Five Guys", cuisine: "Burgers", website:"https://www.fiveguys.com/"}, {name: "Chipotle", cuisine: "Mexican", website:"https://www.chipotle.com/"}, {name: "Noodles and Company", cuisine: "Pasta", website:"https://www.noodles.com/"}, {name: "Five Guys", cuisine: "Burgers", website:"https://www.fiveguys.com/"}, {name: "Chipotle", cuisine: "Mexican", website:"https://www.chipotle.com/"}, {name: "Noodles and Company", cuisine: "Pasta", website:"https://www.noodles.com/"}, {name: "Five Guys", cuisine: "Burgers", website:"https://www.fiveguys.com/"}, {name: "Chipotle", cuisine: "Mexican", website:"https://www.chipotle.com/"}, {name: "Noodles and Company", cuisine: "Pasta", website:"https://www.noodles.com/"}, {name: "Five Guys", cuisine: "Burgers", website:"https://www.fiveguys.com/"}, {name: "Chipotle", cuisine: "Mexican", website:"https://www.chipotle.com/"}];
+  private restaurantArray: RestaurantModel[];
+  private restaurantService: RestaurantContainerService
+  ngOnInit() {
+    this.restaurantArray = this.restaurantService.getRestaurants();
+  }
   restaurant;
 }
