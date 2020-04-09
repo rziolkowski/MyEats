@@ -10,7 +10,6 @@ import { RestaurantContainerComponent } from './restaurantContainer/restaurantCo
 import { RestaurantContainerService } from './services/restaurantContainer.service'
 import { FilterContainerComponent } from './filterContainer/filterContainer.component';
 
-
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAEU5775h5usxBZTtjiROet4ZoRsqk_PbE'

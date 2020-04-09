@@ -6,3 +6,6 @@ form {
 .fullWidth {
   grid-column: 1 / 3;
 }
+.checkbox, select {
+  margin: auto;
+}

@@ -10,6 +10,6 @@ export class RestaurantContainerService {
   constructor(private http: HttpClient) { }
 
   getRestaurants(): Observable<RestaurantModel[]> {
-    return this.http.get<RestaurantModel[]>(this.restaurantURL)
+    return this.http.get<RestaurantModel[]>(this.restaurantURL);
   }
 }

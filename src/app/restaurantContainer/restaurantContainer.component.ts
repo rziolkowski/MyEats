@@ -9,15 +9,14 @@ import { RestaurantModel } from '../models/restaurant.model';
 })
 export class RestaurantContainerComponent {
   restaurantArray: RestaurantModel[];
-  constructor (
-  private restaurantService: RestaurantContainerService
-  ) { }
+  constructor(private restaurantService: RestaurantContainerService) { }
 
   getRestaurants() {
     this.restaurantService.getRestaurants()
     .subscribe(restaurantArray => this.restaurantArray = restaurantArray)
   }
+  
   ngOnInit() {
-    this.getRestaurants()
+    this.getRestaurants();
   }
 }
