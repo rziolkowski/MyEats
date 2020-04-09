@@ -8,10 +8,16 @@ import { RestaurantModel } from '../models/restaurant.model';
   styleUrls: [ './restaurantContainer.component.css' ]
 })
 export class RestaurantContainerComponent {
-  private restaurantArray: RestaurantModel[];
+  restaurantArray: RestaurantModel[];
+  constructor (
   private restaurantService: RestaurantContainerService
-  ngOnInit() {
-    this.restaurantArray = this.restaurantService.getRestaurants();
+  ) { }
+
+  getRestaurants() {
+    this.restaurantService.getRestaurants()
+    .subscribe(restaurantArray => this.restaurantArray = restaurantArray)
   }
-  restaurant;
+  ngOnInit() {
+    this.getRestaurants()
+  }
 }

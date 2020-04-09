@@ -6,8 +6,10 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { MapComponent } from './map/map.component';
-import { RestaurantContainerComponent } from './restaurantContainer/restaurantContainer.component'
-import { FilterContainerComponent } from './filterContainer/filterContainer.component'
+import { RestaurantContainerComponent } from './restaurantContainer/restaurantContainer.component';
+import { RestaurantContainerService } from './services/restaurantContainer.service'
+import { FilterContainerComponent } from './filterContainer/filterContainer.component';
+
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AgmCoreModule.forRoot({
@@ -15,6 +17,7 @@ import { FilterContainerComponent } from './filterContainer/filterContainer.comp
     }), HttpClientModule
   ],
   declarations: [ AppComponent, MapComponent, RestaurantContainerComponent, FilterContainerComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers:    [RestaurantContainerService]
 })
 export class AppModule { }
