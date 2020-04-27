@@ -6,6 +6,7 @@ li {
   border-left: 4px solid #D6817A;
   list-style-type:none;
   text-align: left;
+  height: 8vh;
 }
 a {
   text-decoration: none;
@@ -16,4 +17,12 @@ a:hover {
 }
 p {
     color: #666;
+}
+img {
+  float: left;
+  height: 100%;
+  width: 10%;
+}
+button {
+  float: right;
 }
