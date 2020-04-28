@@ -1,0 +1,39 @@
+a, p, li {
+  margin: 1%;
+}
+li {
+  background-color: #fff;
+  border-left: 4px solid #D6817A;
+  list-style-type:none;
+  text-align: left;
+  height: 8vh;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  text-decoration: underline;
+}
+p {
+    color: #666;
+}
+div {
+  height: 8vh;
+  overflow-y: scroll;
+}
+div::-webkit-scrollbar {
+  display: none;
+}
+h4 {
+  margin: 0px;
+  padding: 0px;
+}
+img {
+  float: left;
+  height: 100%;
+  width: 10%;
+}
+button {
+  float: right;
+}
