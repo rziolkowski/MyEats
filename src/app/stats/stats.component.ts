@@ -10,7 +10,7 @@ import { HttpClient } from "@angular/common/http";
 
 //proxy server: https://jsonplaceholder.typicode.com/todos/1
 export class StatsComponent implements OnInit {
-  readonly ROOT_URL = "localhost";
+  readonly ROOT_URL = "https://jsonplaceholder.typicode.com/todos/1";
 
   posts: Observable<any>;
   newPost: Observable<any>;
