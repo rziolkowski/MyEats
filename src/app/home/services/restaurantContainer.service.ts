@@ -6,7 +6,7 @@ import { catchError, tap } from 'rxjs/operators';
 
 @Injectable()
 export class RestaurantContainerService {
-  private restaurantURL: string = ''//'https://jsonplaceholder.typicode.com/photos'
+  private restaurantURL: string = 'https://jsonplaceholder.typicode.com/photos'
   constructor(private http: HttpClient) { }
 
   getRestaurants(): Observable<RestaurantModel[]> {

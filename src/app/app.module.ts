@@ -17,7 +17,7 @@ import { StatsComponent } from './stats/stats.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, RouterModule, RoutingModule, AgmCoreModule.forRoot({apiKey: 'AIzaSyAEU5775h5usxBZTtjiROet4ZoRsqk_PbE'}), HttpClientModule ],
-  declarations: [ AppComponent, HomeComponent, MapComponent, RestaurantContainerComponent, FilterContainerComponent, LoginComponent, StatsComponent, RouterModule, RoutingModule ],
+  declarations: [ AppComponent, HomeComponent, MapComponent, RestaurantContainerComponent, FilterContainerComponent, LoginComponent, StatsComponent ],
   bootstrap:    [ AppComponent ],
   providers:    [RestaurantContainerService]
 })
