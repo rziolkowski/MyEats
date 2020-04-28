@@ -1,5 +1,5 @@
 <ul>
-		<li *ngFor="let restaurant of restaurantArray">
+		<li *ngFor="let restaurant of restaurantArray | slice:0:15">
       <img src ={{restaurant.thumbnailUrl}}>
       <button type="submit" formaction=""> MyChoice </button>
       <div>
