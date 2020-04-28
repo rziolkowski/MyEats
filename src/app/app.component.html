@@ -1,11 +1,9 @@
-<div id = "restaurants_div">
-  <h3> My Eats </h3>
-  <my-restaurants></my-restaurants>
+<div>
+  <ul class="navBar">
+    <li class="link"><a RouterLinkActive="active" routerLink="/home">Home</a></li>
+    <li class="link"><a RouterLinkActive="active" routerLink="/stats">Stats</a></li>
+    <li class="link" id='loginButton'><a RouterLinkActive="active" routerLink="/login">Login</a></li>
+  </ul> 
 </div>
-<div id = "map_div">
-  <h3> Local Restaurants </h3>
-  <my-map></my-map>
-</div>
-<div id = "filters_div">
-  <my-filters></my-filters>
-</div>
+
+<router-outlet></router-outlet>

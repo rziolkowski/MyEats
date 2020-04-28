@@ -2,7 +2,9 @@
 		<li *ngFor="let restaurant of restaurantArray">
       <img src ={{restaurant.thumbnailUrl}}>
       <button type="submit" formaction=""> I ate here </button>
-      <h3> <a href="http://google.com" target="_blank"> {{restaurant.title}}</a> </h3>
-      <p> {{restaurant.url}} </p>
+      <div>
+        <h4> <a href="https://google.com" target="_blank"> {{restaurant.title}}</a> </h4>
+        <p> {{restaurant.url}} </p>
+        </div>
     </li>
 </ul>

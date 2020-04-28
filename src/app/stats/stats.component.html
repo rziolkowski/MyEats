@@ -1,0 +1,36 @@
+<h1>
+ Stats!
+</h1>
+
+<div>
+  <div class="topRestaurants">
+    <h2>
+      Top Restaurants:
+    </h2>
+    <div class='topList'>
+      <ul>
+        <li *ngFor="let post of posts | async">
+          {{ post["userId"] | json }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="otherList">
+    <h2>
+      Other List:
+    </h2>
+      <div class='topList'>
+        <ul>
+          <li *ngFor="let post of posts | async">
+            {{ post["body"] | json }}
+          </li>
+        </ul>
+      </div>
+  </div>
+</div>
+
+<div>
+  <div id=wrapper>
+    <button (click)="getPosts()" class="button">Update Lists</button> 
+  </div>
+</div>

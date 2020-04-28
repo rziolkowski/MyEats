@@ -1,25 +1,46 @@
-div {
-  margin-top: 4vh;
-  margin-bottom: 4vh;
-  border-style: double;
-  border-width: 1vw;
-  border-color: black;
-  text-align: center;
-  background-color: #7acfd6;
+.navBar {
+  top: 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
-#restaurants_div {
-  margin-left: 4vw;
-  width: 45vw;
-  height: 85vh;
-  overflow-y: scroll;
+
+.link a.activr {
+  color: lavenderblush;
+  background-color: #111;
+}
+
+#wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  height: 20px;
+  width: 100px;
+}
+
+.link {
   float: left;
 }
-#map_div, #filters_div{
-  margin-right: 4vw;
-  width: 40vw;
-  float: right;
+
+.link a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-#filters_div {
-  margin-top: 0;
-  height: 17vh;
+
+/* Change the link color to #111 (black) on hover */
+.link a:hover {
+  background-color: #111;
+} 
+
+#loginButton {
+  float: right;
 }
